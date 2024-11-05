@@ -1,13 +1,7 @@
-#about {
+#qualification {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  text-align: center;
-}
-
-.about__card {
-  margin-left: 0.4rem;
-  margin-right: 0.4rem;
 }

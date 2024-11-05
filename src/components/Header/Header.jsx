@@ -1,6 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import "./Header.css";
 
 function Header() {
@@ -17,7 +15,7 @@ function Header() {
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-house"
+                className="bi bi-house"
                 viewBox="0 0 16 20"
               >
                 <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
@@ -30,7 +28,7 @@ function Header() {
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-person-lines-fill"
+                className="bi bi-person-lines-fill"
                 viewBox="0 0 16 20"
               >
                 <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z" />
@@ -43,7 +41,7 @@ function Header() {
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-card-list"
+                className="bi bi-card-list"
                 viewBox="0 0 16 20"
               >
                 <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z" />
@@ -57,7 +55,7 @@ function Header() {
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-card-image"
+                className="bi bi-card-image"
                 viewBox="0 0 16 20"
               >
                 <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0" />
@@ -71,7 +69,7 @@ function Header() {
                 width="22"
                 height="22"
                 fill="currentColor"
-                class="bi bi-envelope-at"
+                className="bi bi-envelope-at"
                 viewBox="0 0 16 20"
               >
                 <path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2zm3.708 6.208L1 11.105V5.383zM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2z" />

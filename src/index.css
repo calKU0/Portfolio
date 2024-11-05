@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@500;600&display=swap");
 
 :root {
   --header-height: 3rem;
@@ -9,6 +9,7 @@
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
   --text-color: hsl(var(--hue), var(--sat), 46%);
   --body-color: hsl(var(--hue), var(--sat), 98%);
+  --icon-color: #8c4bd6;
   --container-color: #fff;
 
   --body-font: "Poppins", sans-serif;
@@ -31,8 +32,8 @@
   --z-modal: 1000;
 }
 
-@media screen  and (max-width: 992px) {
-  :root{
+@media screen and (max-width: 992px) {
+  :root {
     --big-font-size: 2.75rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
@@ -50,7 +51,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -62,12 +63,14 @@ textarea {
   font-size: var(--normal-font-size) !important;
 }
 
-body{
+body {
   background-color: var(--body-color) !important;
   color: var(--text-color) !important;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--title-color) !important;
   font-weight: var(--font-semi-bold) !important;
 }
@@ -91,11 +94,9 @@ img {
   height: auto;
 }
 
-/**/
+/*======================= BUTTONS ======================*/
 
-
-
-.button{
+.button {
   display: inline-block;
   background-color: var(--title-color);
   color: var(--container-color);
