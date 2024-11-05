@@ -1,0 +1,12 @@
+#home {
+    height: 100vh;
+}
+
+#home__desctiption::before {
+    content: '';
+    position: absolute;
+    width: 65px;
+    height: 2px;
+    background-color: var(--text-color);
+    margin-top: -10px;
+}
