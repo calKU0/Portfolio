@@ -1,0 +1,11 @@
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .badge.bg-purple {
+    background-color: var(--icon-color) !important;
+  }

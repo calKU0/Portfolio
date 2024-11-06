@@ -5,3 +5,17 @@
   align-items: center;
   min-height: 100vh;
 }
+
+.qualification__card {
+  min-width: 550px !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+}
+
+.timeline>.timeline-item::after{
+  border: 2px solid var( --icon-color) !important;
+ }
+
+ .bsb-timeline-8 .timeline::after {
+  background-color: var(--icon-color) !important;
+ }

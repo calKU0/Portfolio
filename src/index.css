@@ -60,7 +60,7 @@ button,
 input,
 textarea {
   font-family: var(--body-font) !important;
-  font-size: var(--normal-font-size) !important;
+  font-size: var(--normal-font-size);
 }
 
 body {
@@ -114,15 +114,7 @@ img {
   align-items: center;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.button-transparent {
+  background: transparent;
+  border: none;
 }
