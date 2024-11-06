@@ -1,11 +1,35 @@
 #portfolio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
 
-  .badge.bg-purple {
-    background-color: var(--icon-color) !important;
-  }
+.badge.bg-purple {
+  background-color: var(--icon-color) !important;
+}
+
+.portfolio__button {
+  transition: background-color 0.5s ease;
+}
+
+.portfolio__button button {
+  transition: color 0.5s ease;
+}
+
+.portfolio__button:hover {
+  background-color: var(--title-color-dark);
+}
+
+.portfolio__button:hover button {
+  color: var(--container-color);
+}
+
+.portfolio__button-active {
+  background-color: var(--title-color-dark) !important;
+}
+
+.portfolio__button-active button {
+  color: var(--container-color);
+}
