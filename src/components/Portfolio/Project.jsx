@@ -37,21 +37,19 @@ function Project(props) {
   };
 
   return (
-    <Col className="d-flex">
-      <Card>
-        <Card.Img variant="top" src={image} alt="Project Image" />
-        <Card.Body className="flex-grow-1">
-          <Card.Title>{title}</Card.Title>
-          <Card.Text>{text}</Card.Text>
+    <Card className="h-100 d-flex flex-column">
+      <Card.Img variant="top" src={image} alt="Project Image" />
+      <Card.Body>
+        <Card.Title>{title}</Card.Title>
+        <Card.Text className="text-start">{text}</Card.Text>
+      </Card.Body>
+      {(github || demo) && (
+        <Card.Body className="d-flex justify-content-end align-items-end">
+          {renderLink(github, "github")}
+          {renderLink(demo, "demo")}
         </Card.Body>
-        {(github || demo) && (
-          <Card.Body className="mt-auto d-flex justify-content-end align-items-end">
-            {renderLink(github, "github")}
-            {renderLink(demo, "demo")}
-          </Card.Body>
-        )}
-      </Card>
-    </Col>
+      )}
+    </Card>
   );
 }
 

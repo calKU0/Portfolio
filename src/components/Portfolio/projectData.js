@@ -57,7 +57,7 @@ const projects = [
   },
   {
     title: "Client Visit Planner Service",
-    text: "A Windows service that integrates with the CRM system to automatically assign daily tasks to sales representatives. It downloads and retrieve data from files in SFTP server and then uploads response files",
+    text: "A Windows Service that integrates with the CRM system to automatically assign daily tasks to sales representatives. It downloads and retrieve data from files in SFTP server and then uploads response files",
     image: "client_visit_planner_service-project.jpg",
     type: "Other",
     demo: "",

@@ -33,3 +33,8 @@
 .portfolio__button-active button {
   color: var(--container-color);
 }
+
+.card img{
+  max-height: 220px;
+  object-fit: cover;
+}

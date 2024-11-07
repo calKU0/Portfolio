@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { CardGroup, Container, Row } from "react-bootstrap";
+import { CardGroup, Container, Row, Col } from "react-bootstrap";
+import { motion } from "framer-motion"; // No need for AnimatePresence
 import Toogler from "./Toogler";
 import Project from "./Project";
 import projects from "./projectData";
@@ -22,21 +23,44 @@ function Portfolio() {
         <h5>My personal and commercial projects</h5>
       </div>
       <Toogler toogleState={toogleState} setToogleState={setToogleState} />
+
       <CardGroup>
         <Row xs={1} md={3} className="g-4 pt-5">
-          {filteredProjects.map((project, index) => (
-            <Project
-              key={index}
-              image={project.image}
-              text={project.text}
-              title={project.title}
-              github={project.github}
-              demo={project.demo}
-            />
+          {filteredProjects.map((project) => (
+            <Col key={project.title}>
+              <div className="h-100 d-flex flex-column">
+                <motion.div
+                  className="h-100"
+                  layout
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  transition={{
+                    layout: {
+                      type: "spring",
+                      stiffness: 120, // Controls the spring effect; lower for smoother, less bouncy animation
+                      damping: 15, // Damping reduces oscillation for a quicker settle
+                    },
+                    duration: 0.4,
+                  }}
+                  whileHover={{ scale: 1.05, rotate: 2 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  <Project
+                    image={project.image}
+                    text={project.text}
+                    title={project.title}
+                    github={project.github}
+                    demo={project.demo}
+                  />
+                </motion.div>
+              </div>
+            </Col>
           ))}
         </Row>
       </CardGroup>
     </Container>
   );
 }
+
 export default Portfolio;
