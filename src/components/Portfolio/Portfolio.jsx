@@ -38,8 +38,8 @@ function Portfolio() {
                   transition={{
                     layout: {
                       type: "spring",
-                      stiffness: 120, // Controls the spring effect; lower for smoother, less bouncy animation
-                      damping: 15, // Damping reduces oscillation for a quicker settle
+                      stiffness: 120,
+                      damping: 15,
                     },
                     duration: 0.4,
                   }}

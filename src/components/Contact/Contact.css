@@ -1,0 +1,21 @@
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.contact__card {
+    border: 1px solid var(--icon-color) !important;
+    padding: 5px !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+#contact a {
+    color: var(--icon-color) !important;
+}
+
+#contact form input,
+#contact form textarea  {
+    border: 1px solid var(--title-color);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
