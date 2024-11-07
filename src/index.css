@@ -98,6 +98,12 @@ textarea {
   resize: none !important;
 }
 
+.selfie-container img {
+  max-height: 450px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 4px 12px;
+}
+
 /*======================= BUTTONS ======================*/
 
 .button {
@@ -122,4 +128,17 @@ textarea {
 .button-transparent {
   background: transparent;
   border: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .button {
+    padding: 0.9rem 1.4rem;
+  }
+  .selfie-container img {
+    max-height: 250px;
+  }
+  .selfie-container {
+    display: flex;
+    justify-content: center;
+  }
 }

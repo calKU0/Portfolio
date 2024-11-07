@@ -5,7 +5,9 @@ function Header() {
   return (
     <Navbar id="navbar" expand="lg" className="bg-body-dark" fixed="top">
       <Container>
-        <Navbar.Brand href="#home">LOGO</Navbar.Brand>
+        <Navbar.Brand href="#home">
+          <img src="logo_bold.png" className="img-fluid" alt="Logo"></img>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav className="ms-auto p-1" navbarScroll>

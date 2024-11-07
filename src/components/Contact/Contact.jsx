@@ -14,7 +14,7 @@ function Contact() {
         <Col md={4}>
           <ContactCards />
         </Col>
-        <Col className="px-md-5 mx-md-5 px-sm-0 mx-sm-0 text-start">
+        <Col className="px-md-5 mx-md-5 px-sm-0 mx-sm-0 text-start mt-3 mt-md-0">
           <ContactForm />
         </Col>
       </Row>

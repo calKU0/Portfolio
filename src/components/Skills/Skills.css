@@ -11,3 +11,16 @@
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
+.skills__cardgroup {
+  width: 75%;
+}
+
+@media only screen and (max-width: 980px) {
+  .skills__cardgroup {
+    width: auto;
+  }
+  .skills__card {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}

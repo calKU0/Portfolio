@@ -1,7 +1,6 @@
 import { Form } from "react-bootstrap";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { env } from "node:process";
 
 function ContactForm() {
   const form = useRef();
@@ -10,11 +9,11 @@ function ContactForm() {
     e.preventDefault();
 
     emailjs.sendForm(
-      process.env.EMAILJS_SERVICE_ID,
-      process.env.EMAILJS_TEMPLATE_ID,
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       form.current,
       {
-        publicKey: process.env.EMAILJS_PUBLIC_KEY,
+        publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
       }
     );
 
@@ -25,11 +24,7 @@ function ContactForm() {
     <Form ref={form} onSubmit={() => sendEmail(event)}>
       <Form.Group className="mb-3" controlId="formName">
         <Form.Label>Name</Form.Label>
-        <Form.Control
-          type="name"
-          name="name"
-          placeholder={env.EMAILJS_SERVICE_ID}
-        />
+        <Form.Control type="name" name="name" placeholder="Enter your name" />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formEmail">
         <Form.Label>E-mail</Form.Label>

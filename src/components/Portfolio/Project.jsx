@@ -1,4 +1,4 @@
-import { Card, Col } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 function Project(props) {
   const { image, title, text, github, demo } = props;

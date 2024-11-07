@@ -17,7 +17,7 @@ function Toogler({ toogleState, setToogleState }) {
         }
       >
         <button
-          className="button-transparent"
+          className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(1)}
         >
           All{" "}
@@ -26,6 +26,7 @@ function Toogler({ toogleState, setToogleState }) {
           </Badge>
         </button>
       </ListGroup.Item>
+
       <ListGroup.Item
         className={
           toogleState === 2
@@ -34,7 +35,7 @@ function Toogler({ toogleState, setToogleState }) {
         }
       >
         <button
-          className="button-transparent"
+          className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(2)}
         >
           Web{" "}
@@ -43,6 +44,7 @@ function Toogler({ toogleState, setToogleState }) {
           </Badge>
         </button>
       </ListGroup.Item>
+
       <ListGroup.Item
         className={
           toogleState === 3
@@ -51,7 +53,7 @@ function Toogler({ toogleState, setToogleState }) {
         }
       >
         <button
-          className="button-transparent"
+          className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(3)}
         >
           Other{" "}

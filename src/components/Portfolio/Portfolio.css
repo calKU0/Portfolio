@@ -10,35 +10,37 @@
   background-color: var(--icon-color) !important;
 }
 
+.portfolio-item-button {
+  display: block; /* Makes the button take the full width */
+  width: 100%; /* Ensures it fills the ListGroup.Item */
+  padding: 0; /* Removes padding from button */
+  border: none; /* Removes the default button border */
+  background: transparent; /* Ensures background is not overwritten */
+}
+
 .portfolio__button {
   transition: background-color 0.5s ease;
+  cursor: pointer; /* Ensures the item looks clickable */
+}
+
+.portfolio__button:hover,
+.portfolio__button-active {
+  background-color: var(--title-color-dark) !important;
+}
+.portfolio__button:hover button,
+.portfolio__button-active button {
+  color: var(--container-color);
 }
 
 .portfolio__button button {
   transition: color 0.5s ease;
 }
 
-.portfolio__button:hover {
-  background-color: var(--title-color-dark);
-}
-
-.portfolio__button:hover button {
-  color: var(--container-color);
-}
-
-.portfolio__button-active {
-  background-color: var(--title-color-dark) !important;
-}
-
-.portfolio__button-active button {
-  color: var(--container-color);
-}
-
-.card img{
+.card img {
   max-height: 220px;
   object-fit: cover;
 }
 
-#portfolio .card{
+#portfolio .card {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }

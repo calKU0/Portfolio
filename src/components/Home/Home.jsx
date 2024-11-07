@@ -5,28 +5,34 @@ function Home() {
   return (
     <Container id="home">
       <Row className="d-flex justify-content-center align-items-center h-100 text-start">
-        <Col xs={12} md={8}>
+        <Col xs={0} md={4} className="order-md-2 mb-3 selfie-container">
+          <img src="selfie.jpg" alt="Krzysztof Kurowski" />
+        </Col>
+        <Col xs={12} md={8} className="order-md-1">
           <h1>Krzysztof Kurowski</h1>
           <h3>Web developer</h3>
-          <h6 id="home__desctiption" className="mb-5 pb-3 pt-1">
+          <h6 id="home__desctiption" className="mb-5 pb-md-3 pt-1">
             I&apos;m a junior backend developer based in Poland. I&apos;m very
             dedicated and passionate about my work.
           </h6>
-          <button className="button mt-4">
-            Let&apos;s contact &nbsp;
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              fill="currentColor"
-              className="bi bi-send"
-              viewBox="0 0 16 17"
-            >
-              <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
-            </svg>
-          </button>
+
+          <a href="#contact">
+            <button className="button mt-md-4">
+              Let&apos;s contact &nbsp;
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="currentColor"
+                className="bi bi-send"
+                viewBox="0 0 16 17"
+              >
+                <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z" />
+              </svg>
+            </button>
+          </a>
           <Row className="pt-5">
-            <Col md={1}>
+            <Col md={1} xs={2} sm={1}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
@@ -57,12 +63,6 @@ function Home() {
               </h3>
             </Col>
           </Row>
-        </Col>
-        <Col xs={12} md={4}>
-          <img
-            src="https://jaronski.pl/wp-content/uploads/2018/05/400x400.png"
-            alt="Krzysztof Kurowski"
-          />
         </Col>
       </Row>
     </Container>

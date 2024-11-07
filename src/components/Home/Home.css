@@ -1,12 +1,16 @@
 #home {
-    height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 #home__desctiption::before {
-    content: '';
-    position: absolute;
-    width: 65px;
-    height: 2px;
-    background-color: var(--text-color);
-    margin-top: -10px;
+  content: "";
+  position: absolute;
+  width: 65px;
+  height: 2px;
+  background-color: var(--text-color);
+  margin-top: -10px;
 }

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { CardGroup, Container, Row, Col } from "react-bootstrap";
-import { motion } from "framer-motion"; // No need for AnimatePresence
+import { motion } from "framer-motion";
 import Toogler from "./Toogler";
 import Project from "./Project";
 import projects from "./projectData";
@@ -18,7 +18,7 @@ function Portfolio() {
 
   return (
     <Container id="portfolio">
-      <div className="mb-5 pb-5">
+      <div className="mb-5 pb-5 mt-5 pt-5">
         <h1>Portfolio</h1>
         <h5>My personal and commercial projects</h5>
       </div>

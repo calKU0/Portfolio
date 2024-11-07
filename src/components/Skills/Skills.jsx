@@ -37,7 +37,7 @@ function Skills() {
     return skills.map(
       (skill, index) =>
         index % 2 === 0 && (
-          <Row key={index} className="mb-2 text-start ">
+          <Row key={index} className="mb-2 text-start" md={2} sm={1} xs={1}>
             <Col>
               <div>
                 <CheckIcon /> {skill[0]}
@@ -61,11 +61,12 @@ function Skills() {
 
   return (
     <Container id="skills">
-      <div className="mb-5 pb-5">
+      <div className="mb-5 pb-5 pt-5 mt-5 pt-md-0 mt-md-0">
         <h1>Skills</h1>
         <h5>My technical level</h5>
       </div>
-      <CardGroup className="w-75">
+
+      <CardGroup className="skills__cardgroup">
         <Card className="skills__card">
           <Card.Body>
             <Card.Title className="pb-4">Frontend Development</Card.Title>

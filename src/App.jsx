@@ -5,6 +5,7 @@ import Skills from "./components/Skills/skills";
 import Qualification from "./components/Qualification/Qualification";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
+import Scrollup from "./components/Scrollup/Scrollup";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Qualification />
       <Portfolio />
       <Contact />
+      <Scrollup />
     </>
   );
 }
