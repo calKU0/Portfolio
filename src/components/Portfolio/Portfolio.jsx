@@ -8,6 +8,7 @@ import "./Portfolio.css";
 
 function Portfolio() {
   const [toogleState, setToogleState] = useState(1);
+  const [visibleCount, setVisibleCount] = useState(6);
 
   const filteredProjects =
     toogleState === 1
@@ -16,17 +17,28 @@ function Portfolio() {
           (project) => project.type === (toogleState === 2 ? "Web" : "Other")
         );
 
+  const visibleProjects = filteredProjects.slice(0, visibleCount);
+
+  const handleShowMore = () => {
+    setVisibleCount((prevCount) => prevCount + 3);
+  };
+
+  const handleToggleChange = (newState) => {
+    setToogleState(newState);
+    setVisibleCount(6);
+  };
+
   return (
     <Container id="portfolio">
       <div className="mb-5 pb-5 mt-5 pt-5">
         <h1>Portfolio</h1>
         <h5>My personal and commercial projects</h5>
       </div>
-      <Toogler toogleState={toogleState} setToogleState={setToogleState} />
+      <Toogler toogleState={toogleState} setToogleState={handleToggleChange} />
 
       <CardGroup>
         <Row xs={1} md={3} className="g-4 pt-5">
-          {filteredProjects.map((project) => (
+          {visibleProjects.map((project) => (
             <Col key={project.title}>
               <div className="h-100 d-flex flex-column">
                 <motion.div
@@ -59,6 +71,13 @@ function Portfolio() {
           ))}
         </Row>
       </CardGroup>
+      {visibleCount < filteredProjects.length && (
+        <div className="text-center mt-4">
+          <button className="button" onClick={handleShowMore}>
+            Show More
+          </button>
+        </div>
+      )}
     </Container>
   );
 }
