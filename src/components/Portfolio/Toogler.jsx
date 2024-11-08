@@ -20,7 +20,7 @@ function Toogler({ toogleState, setToogleState }) {
           className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(1)}
         >
-          All{" "}
+          <span>All </span>
           <Badge pill className="bg-purple">
             {webProjects + otherProjects}
           </Badge>
@@ -38,7 +38,7 @@ function Toogler({ toogleState, setToogleState }) {
           className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(2)}
         >
-          Web{" "}
+          <span>Web </span>
           <Badge pill className="bg-purple">
             {webProjects}
           </Badge>
@@ -56,7 +56,7 @@ function Toogler({ toogleState, setToogleState }) {
           className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(3)}
         >
-          Other{" "}
+          <span>Other </span>
           <Badge pill className="bg-purple">
             {otherProjects}
           </Badge>

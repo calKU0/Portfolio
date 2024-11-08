@@ -8,7 +8,7 @@ import "./Portfolio.css";
 
 function Portfolio() {
   const [toogleState, setToogleState] = useState(1);
-  const [visibleCount, setVisibleCount] = useState(6);
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const filteredProjects =
     toogleState === 1
@@ -25,12 +25,12 @@ function Portfolio() {
 
   const handleToggleChange = (newState) => {
     setToogleState(newState);
-    setVisibleCount(6);
+    setVisibleCount(3);
   };
 
   return (
-    <Container id="portfolio">
-      <div className="mb-5 pb-5 mt-5 pt-5">
+    <Container id="portfolio__container" className="section">
+      <div className="mb-3 pb-3 pt-5 pt-md-0 mt-md-0 mb-md-5 pb-md-5">
         <h1>Portfolio</h1>
         <h5>My personal and commercial projects</h5>
       </div>

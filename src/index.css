@@ -51,6 +51,10 @@
   box-sizing: border-box;
 }
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -61,6 +65,18 @@ input,
 textarea {
   font-family: var(--body-font) !important;
   font-size: var(--normal-font-size);
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.section {
+  min-height: 100vh !important;
+}
+
+.fp-overflow {
+  overflow-x: hidden;
 }
 
 body {

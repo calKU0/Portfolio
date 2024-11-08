@@ -5,8 +5,8 @@ import "./Contact.css";
 
 function Contact() {
   return (
-    <Container id="contact">
-      <div className="mb-5 pb-5 mt-5 pt-5">
+    <Container id="contact1" className="section">
+      <div className="mb-3 pb-3 pt-5 pt-md-0 mt-md-0 mb-md-5 pb-md-5">
         <h1>Contact</h1>
         <h5>Get in touch</h5>
       </div>

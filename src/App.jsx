@@ -1,3 +1,4 @@
+import ReactFullpage from "@fullpage/react-fullpage";
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
@@ -12,12 +13,33 @@ function App() {
   return (
     <>
       <Header />
-      <Home />
-      <About />
-      <Skills />
-      <Qualification />
-      <Portfolio />
-      <Contact />
+      <ReactFullpage
+        licenseKey={"YOUR_KEY_HERE"}
+        scrollingSpeed={1000}
+        scrollOverflow={true}
+        anchors={[
+          "home",
+          "about",
+          "skills",
+          "qualification",
+          "portfolio",
+          "contact",
+        ]}
+        navigation
+        normalScrollElements="#home, #about, #skills, #qualification, #portfolio, #contact"
+        render={({ fullpageApi }) => {
+          return (
+            <ReactFullpage.Wrapper>
+              <Home />
+              <About />
+              <Skills />
+              <Qualification />
+              <Portfolio />
+              <Contact />
+            </ReactFullpage.Wrapper>
+          );
+        }}
+      />
       <Scrollup />
     </>
   );
