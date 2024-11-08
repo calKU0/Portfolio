@@ -1,21 +1,14 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy Node.js app to Azure Web App - {name_of_your_app}
+name: Build and deploy Node.js app to Azure Web App - Portfolio
 
 # Run the workflow whenever change is pushed into the main branch
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 # Optional: environment variables can be injected here
 # You can add these variables in your repository Settings - Secrets and variables - Actions - variables
-env:
-  VITE_EMAILJS_SERVICE_ID: ${{ env.VITE_EMAILJS_SERVICE_ID }}
-  VITE_EMAILJS_TEMPLATE_ID: ${{ env.VITE_EMAILJS_TEMPLATE_ID }}
-  VITE_EMAILJS_PUBLIC_KEY: ${{ env.VITE_EMAILJS_PUBLIC_KEY }}
 
 # There are two jobs in this workflow - build and deploy
 jobs:
@@ -63,7 +56,11 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: { name_of_your_app }
+          app-name: "Portfolio"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }} # Publish profile should always be stored as secrets in your repository Settings - Secrets and variables - Actions - secrets
           package: .
+        env:
+          VITE_EMAILJS_SERVICE_ID: ${{ env.VITE_EMAILJS_SERVICE_ID }}
+          VITE_EMAILJS_TEMPLATE_ID: ${{ env.VITE_EMAILJS_TEMPLATE_ID }}
+          VITE_EMAILJS_PUBLIC_KEY: ${{ env.VITE_EMAILJS_PUBLIC_KEY }}
