@@ -19,7 +19,7 @@ function Qualification() {
 
   return (
     <Container id="qualification__container" className="section">
-      <div className="mb-3 pb-3 pt-2 pt-md-0 mt-md-0 mb-md-5 pb-md-5">
+      <div className="mb-3 pb-3 pt-5 pt-md-0 mt-md-0 mb-md-5 pb-md-5">
         <h1>Qualifications</h1>
         <h5>My personal journey</h5>
       </div>

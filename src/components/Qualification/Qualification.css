@@ -47,4 +47,8 @@
     margin: 0 -5px 0 -5px !important;
     padding-bottom: 10px !important;
   }
+
+  .qualification__card {
+    min-width: 200px !important;
+  }
 }

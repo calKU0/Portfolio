@@ -77,7 +77,14 @@ textarea {
 
 .fp-overflow {
   overflow-x: hidden;
-  padding: 5px 10px 30px 14px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.fp-overflow {
+  overflow: scroll !important;
 }
 
 body {
@@ -157,5 +164,11 @@ textarea {
   .selfie-container {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .fp-overflow {
+    padding: 5px 10px 30px 14px;
   }
 }

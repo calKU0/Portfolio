@@ -11,8 +11,25 @@ function Portfolio() {
   const [toogleState, setToogleState] = useState(1);
   const [filteredProjects, setFilteredProjects] = useState(projects);
   const [slides, setSlides] = useState([]);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Check if the screen width is mobile
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768); // Consider 768px as the breakpoint for mobile
+    };
+
+    // Initialize the resize handler
+    window.addEventListener("resize", handleResize);
+    handleResize(); // Call it immediately to set the correct state on mount
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Filter projects based on the current toggle state
     const updatedFilteredProjects =
       toogleState === 1
         ? projects
@@ -20,14 +37,18 @@ function Portfolio() {
             (project) => project.type === (toogleState === 2 ? "Web" : "Other")
           );
 
+    // Group the filtered projects into sets of 3 or 1 based on screen size
     const newSlides = [];
-    for (let i = 0; i < updatedFilteredProjects.length; i += 3) {
-      newSlides.push(updatedFilteredProjects.slice(i, i + 3));
+    const groupSize = isMobile ? 1 : 3; // 1 for mobile, 3 for larger screens
+
+    for (let i = 0; i < updatedFilteredProjects.length; i += groupSize) {
+      newSlides.push(updatedFilteredProjects.slice(i, i + groupSize));
     }
 
+    // Update the state with the new filtered projects and slides
     setFilteredProjects(updatedFilteredProjects);
     setSlides(newSlides);
-  }, [toogleState]);
+  }, [toogleState, isMobile]); // Re-run when the tab or screen size changes
 
   const handleToggleChange = (newState) => {
     setToogleState(newState);
@@ -35,7 +56,7 @@ function Portfolio() {
 
   return (
     <Container id="portfolio__container" className="section">
-      <div className="mb-3 pb-3 pt-5 mt-md-0 mb-md-5 pb-md-5">
+      <div className="mb-3 pb-3 pt-5 pt-md-0 mt-md-0 mb-md-5 pb-md-5">
         <h1>Portfolio</h1>
         <h5>My personal and commercial projects</h5>
       </div>
@@ -43,13 +64,13 @@ function Portfolio() {
 
       <Carousel
         interval={null}
-        className="pt-3"
+        className="pt-4"
         prevIcon={<AiOutlineLeft className="carousel-control-custom" />}
         nextIcon={<AiOutlineRight className="carousel-control-custom" />}
       >
         {slides.map((slide, index) => (
           <Carousel.Item key={index}>
-            <Row xs={1} md={3} className="g-4">
+            <Row xs={1} sm={1} md={3} lg={3} className="g-4">
               {slide.map((project) => (
                 <Col key={project.title}>
                   <div className="h-100 d-flex flex-column">
