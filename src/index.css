@@ -51,10 +51,6 @@
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -73,10 +69,15 @@ textarea {
 
 .section {
   min-height: 100vh !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .fp-overflow {
   overflow-x: hidden;
+  padding: 5px 10px 30px 14px;
 }
 
 body {

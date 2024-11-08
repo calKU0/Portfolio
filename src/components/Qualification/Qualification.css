@@ -1,6 +1,11 @@
+.qualification__container {
+  width: 1000px !important;
+}
+
 .qualification__card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
+  min-width: 900px !important;
 }
 
 .vertical-timeline::before {
@@ -38,7 +43,7 @@
   .vertical-timeline h5 {
     font-size: 1.2rem;
   }
-  .vertical-timeline-element{
+  .vertical-timeline-element {
     margin: 0 -5px 0 -5px !important;
     padding-bottom: 10px !important;
   }

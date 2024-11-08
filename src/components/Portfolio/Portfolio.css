@@ -3,11 +3,11 @@
 }
 
 .portfolio-item-button {
-  display: block; 
-  width: 100%; 
-  padding: 0; 
-  border: none; 
-  background: transparent; 
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  background: transparent;
 }
 
 .portfolio__button {
@@ -37,8 +37,33 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
+/* Custom styles for Carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  color: black;
+  transform: translateX(-50px); /* Moves the left arrow outside */
+}
+
+.carousel-control-next {
+  transform: translateX(50px); /* Moves the right arrow outside */
+}
+
+.carousel-control-custom {
+  font-size: 2rem;
+  color: black;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  color: black;
+  opacity: 0.8;
+}
+
 @media only screen and (max-width: 380px) {
-  .portfolio__button{
+  .portfolio__button {
     padding: 12px !important;
   }
 }

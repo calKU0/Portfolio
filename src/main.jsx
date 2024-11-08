@@ -4,6 +4,7 @@ import App from "./App.jsx";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-vertical-timeline-component/style.min.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
