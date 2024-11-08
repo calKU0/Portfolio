@@ -33,8 +33,8 @@
   object-fit: cover;
 }
 
-#portfolio .card {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+.card .card-body {
+  min-height: 130px !important;
 }
 
 /* Custom styles for Carousel controls */
@@ -65,5 +65,8 @@
 @media only screen and (max-width: 380px) {
   .portfolio__button {
     padding: 12px !important;
+  }
+  .card .card-body {
+    min-height: auto !important;
   }
 }

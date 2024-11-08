@@ -64,7 +64,7 @@ function Portfolio() {
 
       <Carousel
         interval={null}
-        className="pt-4"
+        className="pt-4 pt-md-0"
         prevIcon={<AiOutlineLeft className="carousel-control-custom" />}
         nextIcon={<AiOutlineRight className="carousel-control-custom" />}
       >
