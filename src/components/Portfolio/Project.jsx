@@ -37,7 +37,7 @@ function Project(props) {
   };
 
   return (
-    <Card className="h-100 d-flex flex-column">
+    <Card className="h-100 d-flex flex-column project__card">
       <Card.Img variant="top" src={image} alt="Project Image" />
       <Card.Body>
         <Card.Title>{title}</Card.Title>

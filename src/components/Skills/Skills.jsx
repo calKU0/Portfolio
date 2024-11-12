@@ -60,7 +60,7 @@ function Skills() {
   };
 
   return (
-    <Container id="skills1" className="section">
+    <Container id="skills__container" className="section">
       <div className="mb-3 pb-3 pt-5 pt-md-0 mt-md-0 mb-md-5 pb-md-5">
         <h1>Skills</h1>
         <h5>My technical level</h5>

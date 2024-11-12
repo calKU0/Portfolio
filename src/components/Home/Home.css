@@ -6,3 +6,10 @@
   background-color: var(--text-color);
   margin-top: -10px;
 }
+
+@media only screen and (max-width: 600px) {
+  .home__button {
+    display: flex;
+    justify-content: center;
+  }
+}

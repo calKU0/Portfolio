@@ -1,3 +1,6 @@
+#portfolio__container {
+  align-items: normal !important;
+}
 .badge.bg-purple {
   background-color: var(--icon-color) !important;
 }
@@ -33,40 +36,28 @@
   object-fit: cover;
 }
 
-.card .card-body {
-  min-height: 130px !important;
+.custom-arrow:hover {
+  color: var(--icon-color);
 }
 
-/* Custom styles for Carousel controls */
-.carousel-control-prev,
-.carousel-control-next {
-  width: auto;
-  color: black;
-  transform: translateX(-50px); /* Moves the left arrow outside */
+.slick svg {
+  left: 10px !important;
 }
 
-.carousel-control-next {
-  transform: translateX(50px); /* Moves the right arrow outside */
+.project__card .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.carousel-control-custom {
-  font-size: 2rem;
-  color: black;
-  cursor: pointer;
-  opacity: 1;
-}
-
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-  color: black;
-  opacity: 0.8;
+#portfolio .card {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 @media only screen and (max-width: 380px) {
   .portfolio__button {
     padding: 12px !important;
-  }
-  .card .card-body {
-    min-height: auto !important;
   }
 }

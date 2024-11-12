@@ -85,6 +85,7 @@ textarea {
 
 .fp-overflow {
   overflow: scroll !important;
+  padding: 2rem;
 }
 
 body {
@@ -152,6 +153,10 @@ textarea {
 .button-transparent {
   background: transparent;
   border: none;
+}
+
+.card {
+  padding: 1.5rem 1rem;
 }
 
 @media only screen and (max-width: 600px) {
