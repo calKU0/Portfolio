@@ -105,7 +105,7 @@ function Portfolio() {
 
   return (
     <Container id="portfolio__container" className="section">
-      <div className="mb-5 mt-5 pt-5">
+      <div className="mb-5 mt-5">
         <h1>Portfolio</h1>
         <h5>My personal and commercial projects</h5>
       </div>
