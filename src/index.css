@@ -77,15 +77,12 @@ textarea {
 
 .fp-overflow {
   overflow-x: hidden;
+  overflow: scroll !important;
+  padding: 2rem;
 }
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-.fp-overflow {
-  overflow: scroll !important;
-  padding: 2rem;
 }
 
 body {

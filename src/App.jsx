@@ -12,7 +12,6 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Header />
       <ReactFullpage
         licenseKey={"YOUR_KEY_HERE"}
         scrollingSpeed={1000}

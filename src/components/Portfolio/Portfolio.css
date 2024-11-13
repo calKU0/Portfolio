@@ -1,6 +1,7 @@
 #portfolio__container {
   align-items: normal !important;
 }
+
 .badge.bg-purple {
   background-color: var(--icon-color) !important;
 }
@@ -31,17 +32,8 @@
   transition: color 0.5s ease;
 }
 
-.card img {
-  max-height: 220px;
-  object-fit: cover;
-}
-
 .custom-arrow:hover {
   color: var(--icon-color);
-}
-
-.slick svg {
-  left: 10px !important;
 }
 
 .project__card .card-text {
@@ -52,12 +44,67 @@
   text-overflow: ellipsis;
 }
 
-#portfolio .card {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+#portfolio__container .card {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+  height: 450px !important;
+  margin: 2rem 0rem !important;
+}
+
+#portfolio__container .card img {
+  max-height: 220px;
+  object-fit: cover;
+}
+
+#portfolio__container.transitioning .project-card {
+  animation: zoom-in-zoom-out 0.8s ease;
+}
+
+.slick-prev svg,
+.slick-next svg {
+  transition: transform 0.3s ease;
+}
+
+.slick-prev::before,
+.slick-next::before {
+  content: none !important;
+}
+
+.slick-prev:hover svg,
+.slick-next:hover svg {
+  transform: scale(1.2);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoom-in-zoom-out {
+  0% {
+    opacity: 0;
+    scale: 80%;
+  }
+  100% {
+    scale: 100%;
+    opacity: 1;
+  }
 }
 
 @media only screen and (max-width: 380px) {
   .portfolio__button {
     padding: 12px !important;
+  }
+
+  #portfolio__container .card {
+    height: 400px !important;
+    margin: 1.2rem 0rem !important;
+  }
+
+  .slick-dots {
+    display: none !important;
   }
 }
