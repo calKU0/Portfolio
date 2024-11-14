@@ -37,9 +37,9 @@
 @media screen and (max-width: 992px) {
   :root {
     --big-font-size: 2.75rem;
-    --h1-font-size: 1.5rem;
-    --h2-font-size: 1.25rem;
-    --h3-font-size: 1rem;
+    --h1-font-size: 1.8rem;
+    --h2-font-size: 1.7rem;
+    --h3-font-size: 1.5rem;
     --normal-font-size: 0.938rem;
     --small-font-size: 0.813rem;
     --smaller-font-size: 0.75rem;
@@ -160,11 +160,20 @@ textarea {
     padding: 0.9rem 1.4rem;
   }
   .selfie-container img {
-    max-height: 250px;
+    max-height: 230px;
   }
   .selfie-container {
     display: flex;
     justify-content: center;
+  }
+  h1 {
+    font-size: var(--h1-font-size) !important;
+  }
+  h2 {
+    font-size: var(--h2-font-size) !important;
+  }
+  h3 {
+    font-size: var(--h3-font-size) !important;
   }
 }
 

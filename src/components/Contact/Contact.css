@@ -3,12 +3,12 @@
   padding: 5px !important;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-#contact a {
+#contact__container a {
   color: var(--icon-color) !important;
 }
 
-#contact form input,
-#contact form textarea {
+#contact__container form input,
+#contact__container form textarea {
   border: 1px solid var(--title-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }

@@ -7,7 +7,6 @@ import Project from "./Project";
 import projects from "./projectData";
 import "./Portfolio.css";
 
-// Import your custom arrows here
 const LeftArrow = ({ className, onClick }) => (
   <div
     className={className}
@@ -60,7 +59,6 @@ const RightArrow = ({ className, onClick }) => (
   </div>
 );
 
-// Slider settings with custom arrows
 const sliderSettings = {
   dots: true,
   infinite: true,
@@ -105,7 +103,7 @@ function Portfolio() {
 
   return (
     <Container id="portfolio__container" className="section">
-      <div className="mb-5 mt-5">
+      <div className="mb-2 mb-md-5 mt-md-5">
         <h1>Portfolio</h1>
         <h5>My personal and commercial projects</h5>
       </div>
