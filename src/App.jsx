@@ -8,15 +8,25 @@ import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 import Scrollup from "./components/Scrollup/Scrollup";
 import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  function setViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+
+  useEffect(() => {
+    setViewportHeight();
+    window.addEventListener("resize", setViewportHeight);
+    return () => window.removeEventListener("resize", setViewportHeight);
+  }, []);
   return (
     <>
       <Header />
       <ReactFullpage
         licenseKey={"YOUR_KEY_HERE"}
         scrollingSpeed={1000}
-        scrollOverflow={true}
         anchors={[
           "home",
           "about",
@@ -25,7 +35,6 @@ function App() {
           "portfolio",
           "contact",
         ]}
-        verticalCentered={true}
         navigation
         normalScrollElements="#home, #about, #skills, #qualification, #portfolio, #contact"
         render={({ fullpageApi }) => {

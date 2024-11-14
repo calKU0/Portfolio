@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Col, Row, Card } from "react-bootstrap";
-import Timeline from "./Timeline";
+import CareerTimeline from "./CareerTimeline";
 import "./Qualification.css";
 
 function Qualification() {
@@ -24,8 +24,8 @@ function Qualification() {
         <h5>My personal journey</h5>
       </div>
 
-      <Card className="qualification__card px-3">
-        <Row md={2} className="text-ceter px-3">
+      <Card className="qualification__card">
+        <Row md={2} className="text-ceter">
           <Col className="text-end">
             <Card.Title className="mb-3">
               <button
@@ -80,7 +80,7 @@ function Qualification() {
             isTransitioning ? "fade-out" : "fade-in"
           }`}
         >
-          <Timeline type={toogleState === 1 ? "education" : "work"} />
+          <CareerTimeline type={toogleState === 1 ? "education" : "work"} />
         </div>
       </Card>
     </Container>

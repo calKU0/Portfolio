@@ -1,11 +1,7 @@
-.qualification__container {
-  width: 1000px !important;
-}
-
 .qualification__card {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
     rgba(0, 0, 0, 0.3) 0px 8px 16px -8px !important;
-  min-width: 900px !important;
+  min-width: 600px !important;
 }
 
 .vertical-timeline::before {
@@ -22,32 +18,20 @@
   max-height: 900px;
 }
 
+.rs-timeline-item-active .rs-timeline-item-dot:before {
+  background-color: var(--icon-color) !important;
+}
+
+.timeline__image {
+  max-height: 70px;
+}
+
 .timeline-container {
   transition: opacity 0.7s ease, max-height 0.5s ease;
   overflow: hidden;
 }
 
-@media only screen and (min-width: 600px) {
-  .vertical-timeline-element-icon {
-    width: 30px !important;
-    height: 30px !important;
-    transform: translateX(50%) !important;
-  }
-}
 @media only screen and (max-width: 600px) {
-  .vertical-timeline-element-icon {
-    width: 30px !important;
-    height: 30px !important;
-    transform: translate(10px, 8px) !important;
-  }
-  .vertical-timeline h5 {
-    font-size: 1.2rem;
-  }
-  .vertical-timeline-element {
-    margin: 0 -5px 0 -5px !important;
-    padding-bottom: 10px !important;
-  }
-
   .qualification__card {
     min-width: 200px !important;
   }

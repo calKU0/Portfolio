@@ -30,6 +30,8 @@
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
+
+  --vh: 100vh;
 }
 
 @media screen and (max-width: 992px) {
@@ -68,7 +70,7 @@ textarea {
 }
 
 .section {
-  min-height: 100vh !important;
+  height: calc(var(--vh, 1vh) * 100) !important;
   align-items: center;
 }
 
