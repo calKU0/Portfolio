@@ -62,7 +62,7 @@ button,
 input,
 textarea {
   font-family: var(--body-font) !important;
-  font-size: var(--normal-font-size);
+  font-size: var(--normal-font-size) !important;
 }
 
 .fp-watermark {
