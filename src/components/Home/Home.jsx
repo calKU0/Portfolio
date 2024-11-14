@@ -41,7 +41,7 @@ function Home() {
             </button>
           </a>
           <Row
-            className="pt-md-5 pt-3 scroll-row d-flex justify-content-center position-absolute bottom-0 px-4 px-md-0"
+            className="pt-md-5 pt-3 scroll-row d-flex justify-content-center position-absolute bottom-0 px-4 px-md-0 pb-md-2 pb-0"
             md={1}
           >
             <h3>

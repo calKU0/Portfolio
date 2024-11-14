@@ -12,9 +12,9 @@ function CareerTimeline(props) {
               <b>Field: </b> IT
             </p>
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQq9qQZOp_9UHX_tWU1WMcILe-S3-_857iYBQ&s"
+              src="zs3-logo.png"
               className="timeline__image"
-              alt="Gąska sp. z o.o."
+              alt="zs3-logo"
             ></img>
           </Timeline.Item>
           <Timeline.Item>
@@ -26,9 +26,9 @@ function CareerTimeline(props) {
               <b>Specialization:</b> Software engineering
             </p>
             <img
-              src="https://juwenaliauek.pl/wp-content/uploads/2023/01/logo-UEK-kolor.png"
+              src="uek-logo.png"
               className="timeline__image"
-              alt="Gąska sp. z o.o."
+              alt="UEK logo"
             ></img>
           </Timeline.Item>
         </>
@@ -40,9 +40,9 @@ function CareerTimeline(props) {
             <h6>Gąska sp. z o.o.</h6>
             <p>IT support, Helpdesk, MSSQL</p>
             <img
-              src="https://gaska.com.pl/wp-content/uploads/2022/07/logo.png"
+              src="gaska-logo.png"
               className="timeline__image"
-              alt="Gąska sp. z o.o."
+              alt="Gąska sp. z o.o. - logo"
             ></img>
           </Timeline.Item>
           <Timeline.Item>
@@ -51,9 +51,9 @@ function CareerTimeline(props) {
             <h6>Gąska sp. z o.o.</h6>
             <p>Rest api, Windows Services, Winforms, ERP addons, MSSQL</p>
             <img
-              src="https://gaska.com.pl/wp-content/uploads/2022/07/logo.png"
+              src="gaska-logo.png"
               className="timeline__image"
-              alt="Gąska sp. z o.o."
+              alt="Gąska sp. z o.o. - logo"
             ></img>
           </Timeline.Item>
         </>
