@@ -18,7 +18,7 @@ function CareerTimeline(props) {
             ></img>
           </Timeline.Item>
           <Timeline.Item>
-            <p>2022 - 2024</p>
+            <p>2022 - now</p>
             <h5>Bachelor&apos;s studies</h5>
             <h6>UEK Crackow</h6>
             <p>
