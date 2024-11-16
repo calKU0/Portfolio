@@ -1,4 +1,4 @@
-#home__desctiption::before {
+#home__description::before {
   content: "";
   position: absolute;
   width: 65px;

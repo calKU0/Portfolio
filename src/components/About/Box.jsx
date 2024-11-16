@@ -8,12 +8,12 @@ function Box() {
       <Col>
         <Card className="about__card">
           <Card.Body>
-            <Card.Subtitle>
+            <Card.Subtitle className="mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
-                fill="currentColor"
+                fill="var(--icon-color)"
                 className="bi bi-clock-history"
                 viewBox="0 0 16 16"
               >
@@ -30,12 +30,12 @@ function Box() {
       <Col>
         <Card className="about__card">
           <Card.Body>
-            <Card.Subtitle>
+            <Card.Subtitle className="mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
-                fill="currentColor"
+                fill="var(--icon-color)"
                 className="bi bi-check2-square"
                 viewBox="0 0 16 16"
               >
@@ -53,12 +53,12 @@ function Box() {
       <Col>
         <Card className="about__card">
           <Card.Body>
-            <Card.Subtitle>
+            <Card.Subtitle className="mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
-                fill="currentColor"
+                fill="var(--icon-color)"
                 className="bi bi-building"
                 viewBox="0 0 16 16"
               >

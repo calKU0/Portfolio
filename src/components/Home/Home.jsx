@@ -20,14 +20,13 @@ function Home() {
         <Col xs={12} md={7} className="order-md-2">
           <h1>Krzysztof Kurowski</h1>
           <h3>Web developer</h3>
-          <h6 id="home__desctiption" className="mb-4 pb-md-3 pt-1">
+          <h6 id="home__description" className="mb-4 pb-md-3 pt-1">
             I&apos;m a junior backend developer based in Poland. I&apos;m very
             dedicated and passionate about my work.
           </h6>
-
           <a href="#contact" className="home__button">
             <button className="button mt-md-4">
-              Let&apos;s contact &nbsp;
+              Contact Me &nbsp;
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -49,7 +48,7 @@ function Home() {
                 xmlns="http://www.w3.org/2000/svg"
                 width="50"
                 height="50"
-                fill="black"
+                fill="var(--icon-color)"
                 className="bi bi-mouse"
                 viewBox="0 0 16 18"
               >
