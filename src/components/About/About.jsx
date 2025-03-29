@@ -22,10 +22,10 @@ function About() {
               I&apos;m a backend developer with a strong focus on ASP.NET and
               .NET technologies, building efficient and scalable solutions.
               Recently, I&apos;ve been expanding my skill set into frontend
-              development, working with HTML, CSS, JavaScript, and React to
-              become a more versatile full-stack developer. My goal is to create
-              seamless and user-friendly applications by combining solid backend
-              logic with engaging frontend experiences.
+              development, working with HTML, CSS, JavaScript, Blazor and React
+              to become a more versatile full-stack developer. My goal is to
+              create seamless and user-friendly applications by combining solid
+              backend logic with engaging frontend experiences.
             </span>
           </Row>
           <button className="button mt-5">
