@@ -100,7 +100,6 @@ function Portfolio() {
 
     return () => clearTimeout(timeout);
   }, [toogleState]);
-
   return (
     <Container id="portfolio__container" className="section">
       <div className="mb-2 mb-md-5 mt-md-5">
@@ -117,13 +116,11 @@ function Portfolio() {
             whileHover={{ scale: 1.05, rotate: 2 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            onClick={(e) => e.stopPropagation()}
           >
             <Project
-              image={project.image}
-              text={project.text}
-              title={project.title}
-              github={project.github}
-              demo={project.demo}
+              project={project}
+              onClick={(e) => handleCardClick(e, project)} // Only open modal if not from slider
             />
           </motion.div>
         ))}

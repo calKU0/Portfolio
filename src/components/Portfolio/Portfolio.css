@@ -74,6 +74,11 @@
   transform: scale(1.2);
 }
 
+.button-demo {
+  background-color: var(--icon-color) !important;
+  color: white !important;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
