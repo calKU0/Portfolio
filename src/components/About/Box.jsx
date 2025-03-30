@@ -45,7 +45,7 @@ function Box() {
             </Card.Subtitle>
             <Card.Title>Completed</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              20+ projects
+              30+ projects
             </Card.Subtitle>
           </Card.Body>
         </Card>
@@ -66,9 +66,9 @@ function Box() {
                 <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3z" />
               </svg>
             </Card.Subtitle>
-            <Card.Title>Worked for</Card.Title>
+            <Card.Title>Developed for</Card.Title>
             <Card.Subtitle className="mb-2 text-muted">
-              2 companies
+              3 companies
             </Card.Subtitle>
           </Card.Body>
         </Card>
