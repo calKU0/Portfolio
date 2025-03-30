@@ -1,18 +1,22 @@
 # Portfolio
 
 ## Overview
+
 This is my inaugural React project, serving as a personal portfolio website to showcase my work and skills.
 
 ## Features
+
 - Responsive design
 - Showcases projects and skills
 - Built with modern frontend technologies
 
 ## Technologies Used
+
 - **Frameworks:** React
 - **Technologies:** JavaScript, HTML, CSS
 
 ## Installation
+
 1. Clone the repository:
    ```sh1
    git clone https://github.com/calKU0/Portfolio.git
@@ -27,4 +31,5 @@ This is my inaugural React project, serving as a personal portfolio website to s
    ```
 
 ## Live Demo
-[Visit Portfolio](http://localhost:5173)
+
+[Visit Portfolio](https://portfolio.kkurowski.com)
