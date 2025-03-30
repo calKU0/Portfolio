@@ -36,12 +36,16 @@
   color: var(--icon-color);
 }
 
-.project__card .card-text {
+.project__card .card-content {
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.project-card {
+  cursor: pointer;
 }
 
 #portfolio__container .card {
@@ -79,6 +83,14 @@
   color: white !important;
 }
 
+.clickable-icon {
+  padding: 6px;
+}
+
+.details-link a {
+  font-size: var(--small-font-size) !important;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -111,5 +123,9 @@
 
   .slick-dots {
     display: none !important;
+  }
+
+  .project__card .card-content {
+    -webkit-line-clamp: 7;
   }
 }

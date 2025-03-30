@@ -1,4 +1,4 @@
-import { Modal, Button, Row, Col, Container, Badge } from "react-bootstrap";
+import { Modal, Row, Col, Container, Badge } from "react-bootstrap";
 
 function Details({ show, handleClose, project }) {
   const technologies = project.technologies
@@ -10,7 +10,13 @@ function Details({ show, handleClose, project }) {
 
   return (
     <Container>
-      <Modal show={show} onHide={handleClose} centered size="lg">
+      <Modal
+        show={show}
+        onHide={handleClose}
+        centered
+        size="lg"
+        className="details-modal"
+      >
         <Modal.Header closeButton>
           <Modal.Title>{project.title}</Modal.Title>
         </Modal.Header>
@@ -28,7 +34,7 @@ function Details({ show, handleClose, project }) {
 
             {/* Technologies & Frameworks */}
             <Col md={6}>
-              <h5 className="mb-2">Technologies</h5>
+              <h5 className="mb-2 mt-2 mt-sm-0">Technologies</h5>
               <div className="d-flex flex-wrap gap-2">
                 {technologies.map((tech, index) => (
                   <Badge key={index} pill bg="purple" className="p-2">
@@ -50,15 +56,16 @@ function Details({ show, handleClose, project }) {
 
           {/* Project Description */}
           <p className="mt-4">{project.text}</p>
-
+        </Modal.Body>
+        <Modal.Footer className="d-flex justify-content-between">
           {/* Links */}
-          <div className="d-flex justify-content-start gap-3 mt-3">
+          <div className="d-flex justify-content-start gap-3 details-link ">
             {project.github && (
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn btn-dark button-github"
+                className="btn btn-dark button-github px-1 px-sm-2"
               >
                 <svg
                   width="28"
@@ -81,7 +88,7 @@ function Details({ show, handleClose, project }) {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn button-demo"
+                className="btn button-demo px-1 px-sm-2 d-flex align-items-center"
               >
                 <svg
                   width="22"
@@ -106,11 +113,9 @@ function Details({ show, handleClose, project }) {
               </a>
             )}
           </div>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          {/*<Button variant="secondary" onClick={handleClose}>
             Close
-          </Button>
+          </Button>*/}
         </Modal.Footer>
       </Modal>
     </Container>
