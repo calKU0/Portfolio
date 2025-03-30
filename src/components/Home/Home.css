@@ -1,7 +1,7 @@
 #home__description::before {
   content: "";
   position: absolute;
-  width: 65px;
+  width: 60px;
   height: 2px;
   background-color: var(--text-color);
   margin-top: -10px;

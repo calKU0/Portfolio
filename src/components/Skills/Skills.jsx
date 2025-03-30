@@ -6,18 +6,21 @@ function Skills() {
     ["HTML", "Intermediate"],
     ["Bootstrap", "Intermediate"],
     ["CSS", "Basic"],
-    ["Git", "Intermediate"],
     ["JavaScript", "Basic"],
     ["React", "Basic"],
+    ["Blazor", "Basic"],
+    ["WinForms", "Intermediate"],
+    ["WPF", "Basic"],
   ];
 
   const backend = [
-    ["ASP.NET", "Intermediate"],
-    ["MSSQL", "Advanced"],
-    ["Node Js", "Basic"],
+    ["ASP.NET Core", "Intermediate"],
+    ["MSSQL Server", "Advanced"],
+    ["Entity Framework", "Intermediate"],
     ["T-SQL", "Advanced"],
     ["Java", "Intermediate"],
     ["C#", "Intermediate"],
+    ["Python", "Intermediate"],
   ];
 
   const CheckIcon = () => (

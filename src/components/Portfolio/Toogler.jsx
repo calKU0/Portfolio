@@ -2,19 +2,23 @@ import { ListGroup, Badge } from "react-bootstrap";
 import projects from "./projectData";
 
 function Toogler({ toogleState, setToogleState }) {
-  const webProjects = projects.filter(
-    (project) => project.type === "Web"
+  const allProjects = projects.length;
+  const backendProjects = projects.filter(
+    (project) => project.type === "Backend"
   ).length;
-  const otherProjects = projects.length - webProjects;
+  const frontendProjects = projects.filter(
+    (project) => project.type === "Frontend"
+  ).length;
+  const fullstackProjects = projects.filter(
+    (project) => project.type === "Fullstack"
+  ).length;
 
   return (
-    <ListGroup horizontal className="justify-content-center">
+    <ListGroup horizontal className="justify-content-center d-flex flex-wrap">
       <ListGroup.Item
-        className={
-          toogleState === 1
-            ? "portfolio__button portfolio__button-active"
-            : "portfolio__button"
-        }
+        className={`portfolio__button ${
+          toogleState === 1 ? "portfolio__button-active" : ""
+        } col-6 col-sm-3 p-2 border-start`}
       >
         <button
           className="button-transparent portfolio-item-button"
@@ -22,43 +26,55 @@ function Toogler({ toogleState, setToogleState }) {
         >
           <span>All </span>
           <Badge pill className="bg-purple">
-            {webProjects + otherProjects}
+            {allProjects}
           </Badge>
         </button>
       </ListGroup.Item>
 
       <ListGroup.Item
-        className={
-          toogleState === 2
-            ? "portfolio__button portfolio__button-active"
-            : "portfolio__button"
-        }
+        className={`portfolio__button ${
+          toogleState === 2 ? "portfolio__button-active" : ""
+        } col-6 col-sm-3 p-2 border-start`}
       >
         <button
           className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(2)}
         >
-          <span>Web </span>
+          <span>Backend </span>
           <Badge pill className="bg-purple">
-            {webProjects}
+            {backendProjects}
           </Badge>
         </button>
       </ListGroup.Item>
 
       <ListGroup.Item
-        className={
-          toogleState === 3
-            ? "portfolio__button portfolio__button-active"
-            : "portfolio__button"
-        }
+        className={`portfolio__button ${
+          toogleState === 3 ? "portfolio__button-active" : ""
+        } col-6 col-sm-3 p-2 border-start`}
       >
         <button
           className="button-transparent portfolio-item-button"
           onClick={() => setToogleState(3)}
         >
-          <span>Other </span>
+          <span>Frontend </span>
           <Badge pill className="bg-purple">
-            {otherProjects}
+            {frontendProjects}
+          </Badge>
+        </button>
+      </ListGroup.Item>
+
+      <ListGroup.Item
+        className={`portfolio__button ${
+          toogleState === 4 ? "portfolio__button-active" : ""
+        } col-6 col-sm-3 p-2 border-start`}
+      >
+        <button
+          className="button-transparent portfolio-item-button"
+          onClick={() => setToogleState(4)}
+        >
+          <span>Fullstack </span>
+          <Badge pill className="bg-purple">
+            {fullstackProjects}
           </Badge>
         </button>
       </ListGroup.Item>

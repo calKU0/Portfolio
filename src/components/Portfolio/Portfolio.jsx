@@ -63,7 +63,7 @@ const sliderSettings = {
   dots: true,
   infinite: true,
   autoplay: true,
-  autoplaySpeed: 4000,
+  autoplaySpeed: 5000,
   speed: 500,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -86,10 +86,15 @@ function Portfolio() {
   const filteredProjects =
     toogleState === 1
       ? projects
-      : projects.filter(
-          (project) => project.type === (toogleState === 2 ? "Web" : "Other")
+      : projects.filter((project) =>
+          toogleState === 2
+            ? project.type === "Backend"
+            : toogleState === 3
+            ? project.type === "Frontend"
+            : toogleState === 4
+            ? project.type === "Fullstack"
+            : true
         );
-
   useEffect(() => {
     const container = document.getElementById("portfolio__container");
     container.classList.add("transitioning");
@@ -100,7 +105,6 @@ function Portfolio() {
 
     return () => clearTimeout(timeout);
   }, [toogleState]);
-
   return (
     <Container id="portfolio__container" className="section">
       <div className="mb-2 mb-md-5 mt-md-5">
@@ -113,18 +117,12 @@ function Portfolio() {
         {filteredProjects.map((project) => (
           <motion.div
             key={project.title}
-            className="project-card px-4"
+            className="project-card px-2 px-sm-4"
             whileHover={{ scale: 1.05, rotate: 2 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
           >
-            <Project
-              image={project.image}
-              text={project.text}
-              title={project.title}
-              github={project.github}
-              demo={project.demo}
-            />
+            <Project project={project} />
           </motion.div>
         ))}
       </Slider>

@@ -19,7 +19,7 @@ function Home() {
 
         <Col xs={12} md={7} className="order-md-2">
           <h1>Krzysztof Kurowski</h1>
-          <h3>Web developer</h3>
+          <h3>.NET Developer</h3>
           <h6 id="home__description" className="mb-4 pb-md-3 pt-1">
             I&apos;m a junior backend developer based in Poland. I&apos;m very
             dedicated and passionate about my work.
