@@ -80,6 +80,16 @@ const projects = [
     technologies: "C#, REST API, SQL Server",
   },
   {
+    title: "API Data Sync & XML Generator",
+    text: "A console application built with .NET Core that automates data retrieval from an API, updates a database, and generates an XML file. It processes product codes from a .txt file, retrieves corresponding IDs from the database, fetches detailed product data via API, and saves the results in both the database and an XML file. The application integrates with MySQL and supports REST API.",
+    image: "APIDataSyncXMLGenerator.png",
+    type: "Backend",
+    demo: "",
+    github: "https://github.com/calKU0/APIDataSyncXMLGenerator",
+    frameworks: ".NET Core",
+    technologies: "C#, REST API, SQL Server",
+  },
+  {
     title: "Logistics Calendar",
     text: "A simple calendar application developed for the logistics department to manage deliveries and dispatches. This add-on for Comarch ERP XL utilizes its Hydra framework to integrate seamlessly with the ERP system, enhancing scheduling and coordination.",
     image: "logistics_calendar-project.PNG",
