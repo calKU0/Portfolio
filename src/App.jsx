@@ -25,26 +25,25 @@ function App() {
     <>
       <Header />
       <ReactFullpage
-        licenseKey={"YOUR_KEY_HERE"}
         scrollingSpeed={1000}
         anchors={[
           "home",
           "about",
           "skills",
-          "qualification",
           "portfolio",
+          "qualification",
           "contact",
         ]}
         navigation
-        normalScrollElements="#home, #about, #skills, #qualification, #portfolio, #contact"
-        render={({ fullpageApi }) => {
+        normalScrollElements="#home, #about, #skills, #portfolio, #qualification, #contact"
+        render={() => {
           return (
             <ReactFullpage.Wrapper>
               <Home />
               <About />
               <Skills />
-              <Qualification />
               <Portfolio />
+              <Qualification />
               <Contact />
             </ReactFullpage.Wrapper>
           );
