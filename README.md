@@ -1,5 +1,7 @@
 # Portfolio
 
+> 🧪 **Personal Project** — built for experimentation, fun, or learning.
+
 ## Overview
 
 This is my inaugural React project, serving as a personal portfolio website to showcase my work and skills.
